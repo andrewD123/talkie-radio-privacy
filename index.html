@@ -50,6 +50,15 @@ not receive or keep your voice, texts, photos, location or contacts.</li>
 <li><b>Other phones in your group</b> receive what you send and keep it in their own History on their phone.</li>
 </ul>
 
+<h2>Invites (QR code and text link)</h2>
+<p>Any member of a group can make an invite: a QR code or a link that contains the group name and group password, so
+someone can join without typing them. You choose who you show or send it to. The invite part of the link comes after
+the "#", which browsers never send to this website; the <a href="join.html">join page</a> only hands it to the app on
+your phone. An invite stops working in the app after 24 hours, but anyone who has it knows the group password: to cut
+off access, change the group password. When someone makes or uses an invite, the app tells the other members of that
+group (who made it, who joined, and when), encrypted like any other group message, and each phone keeps that access log
+on the phone.</p>
+
 <h2>Relays</h2>
 <p>The app passes encrypted messages through public MQTT relays: EMQX (<code>broker.emqx.io</code>) and HiveMQ
 (<code>broker.hivemq.com</code>). Like any internet service, a relay sees your IP address and when your phone is
