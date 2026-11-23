@@ -29,6 +29,7 @@
 
   <div class="card" id="ok" hidden>
     <a class="btn" id="open" href="#">Open in Talkie Radio</a>
+    <p style="margin:4px 0 12px">Tap the button to open the invite in the app.</p>
     <a class="btn alt" href="https://play.google.com/store/apps/details?id=com.talkie.radio">Get Talkie Radio on Google Play</a>
     <button class="btn alt" id="copy" type="button">Copy invite link</button>
     <p style="margin:12px 0 0">Don't have the app yet? Install it, then open this link again.
@@ -47,6 +48,9 @@
   var m = location.hash.match(/(?:^#|&)j=([A-Za-z0-9_-]{20,1200})/);
   if (!m) { document.getElementById("nope").hidden = false; return; }
   var code = m[1];
+  // keep the invite (it contains the group password) out of the browser history
+  try { history.replaceState(null, "", location.pathname); } catch (e) {}
+  var link = location.origin + location.pathname + "#j=" + code;
   var play = "https://play.google.com/store/apps/details?id=com.talkie.radio";
   var isAndroid = /Android/i.test(navigator.userAgent);
   var intentUrl = "intent://join/" + code + "#Intent;scheme=talkieradio;package=com.talkie.radio;S.browser_fallback_url=" + encodeURIComponent(play) + ";end";
@@ -54,10 +58,8 @@
   open.href = isAndroid ? intentUrl : "talkieradio://join/" + code;
   document.getElementById("ok").hidden = false;
   document.getElementById("copy").onclick = function () {
-    var link = location.href;
     if (navigator.clipboard) navigator.clipboard.writeText(link).then(function () { document.getElementById("copy").textContent = "Copied"; });
   };
-  if (isAndroid) setTimeout(function () { location.href = intentUrl; }, 300);   // try the app right away
 })();
 </script>
 </body>
