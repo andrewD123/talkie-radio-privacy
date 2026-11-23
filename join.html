@@ -58,7 +58,9 @@
   open.href = isAndroid ? intentUrl : "talkieradio://join/" + code;
   document.getElementById("ok").hidden = false;
   document.getElementById("copy").onclick = function () {
-    if (navigator.clipboard) navigator.clipboard.writeText(link).then(function () { document.getElementById("copy").textContent = "Copied"; });
+    var btn = document.getElementById("copy");
+    var fail = function () { btn.textContent = "Copy failed: open the link from the message again"; };
+    if (navigator.clipboard) navigator.clipboard.writeText(link).then(function () { btn.textContent = "Copied"; }, fail); else fail();
   };
 })();
 </script>
