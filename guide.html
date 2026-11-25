@@ -126,7 +126,7 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <li><b>Private calls</b> — tap the phone icon on a person: it rings, and you both talk at once.</li>
 <li><b>Photos to someone whose app is closed:</b> their phone shows a notification "Sent a photo" and the photo arrives when they</li>
 </ul>
-<p>open the app (photos aren't stored in the background on purpose, to save the phone's memory). Your phone keeps re-sending until then. <span class="new">4.3</span> You'll see "waiting for them to open the app" instead of "Not received", and the photo arrives the moment they open it.</p>
+<p>open the app (photos aren't stored in the background on purpose, to save the phone's memory). Your phone keeps re-sending until then. <i>(Planned for 4.4)</i> You'll see "waiting for them to open the app" instead of "Not received", and the photo arrives the moment they open it.</p>
 <ul>
 <li>"Private" messages are shown only to that person, but they use the group's key — another member with a modified app could</li>
 </ul>
@@ -217,7 +217,7 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <li>No account, no phone number, no ads, no tracking. Android ID, IMEI and phone number are never read.</li>
 <li>Messages are encrypted on the phone with a key made from the group name + password. Talkie's server and the backup relays</li>
 </ul>
-<p>pass encrypted data only. <span class="new">4.3</span> Talkie's server may keep encrypted copies of re-sent messages for up to 1 hour so a phone that was offline can catch up — it still can't read them.</p>
+<p>pass encrypted data only. <i>(Planned for 4.4)</i> Talkie's server may keep encrypted copies of re-sent messages for up to 1 hour so a phone that was offline can catch up — it still can't read them.</p>
 <ul>
 <li>Choose a long group password and share it only with your team.</li>
 <li>Full privacy policy: <a href="https://andrewd123.github.io/talkie-radio-privacy/">https://andrewd123.github.io/talkie-radio-privacy/</a></li>
@@ -256,7 +256,7 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <p><b>Who can hear us?</b> Only people who know your group name and password. Messages are encrypted on the phone.</p>
 <p><b>Does it work without internet?</b> Yes, between nearby phones (mesh). With more phones spread out, it reaches further.</p>
 <p><b>Does it work if the other person's screen is off?</b> Yes for voice, emergencies, alerts and texts. Photos and late voice messages wait until they open the app (§13).</p>
-<p><b>Someone shows Online but didn't get my photo — why?</b> Online means their radio runs in the background; photos are only taken in when their app is open (§6). <span class="new">4.3</span> clearer label + instant delivery on open.</p>
+<p><b>Someone shows Online but didn't get my photo — why?</b> Online means their radio runs in the background; photos are only taken in when their app is open (§6). A clearer label and instant delivery on open are planned for 4.4.</p>
 <p><b>Why did someone go Offline?</b> Usually Android stopped the app to save battery — allow the battery exemption (§15).</p>
 <p><b>How much data does it use?</b> Very little. Voice ~128 kbit/s while talking in 4.2; <span class="new">4.3</span> about 22 kbit/s (5–8× less).</p>
 <p><b>What happens if I talk during a weak connection?</b> <span class="new">4.3</span> It waits and retries up to 60 s silently before telling you.</p>
@@ -267,9 +267,10 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <p><b>How many radios can be in a group?</b> No limit today.</p>
 <h2 id="17-change-log">17. Change log</h2>
 <ul>
-<li><b>4.3 (in testing):</b> Opus voice (Android 10+); server catch-up for missed messages; emergency audio fix; smart mesh; Wi-Fi</li>
+<li><b>4.4 (planned):</b> server catch-up for missed messages; Bluetooth Long Range + 2.4 GHz Wi-Fi Direct mesh links; photo "waiting" status and instant delivery on open; background sends with confirmation.</li>
+<li><b>4.3 (in testing):</b> Opus voice (Android 10+); emergency audio fix; smart mesh; Wi-Fi</li>
 </ul>
-<p>without internet → mobile data; send retry (silent 10 s / failed at 60 s, kept in History); Device capabilities; Send group / Receive group; clearer photo "waiting" status (planned); many reliability fixes.</p>
+<p>without internet → mobile data; send retry (silent 10 s / failed at 60 s, kept in History); Device capabilities; Send group / Receive group; many reliability fixes.</p>
 <ul>
 <li><b>4.2 (Google Play, 2026-11-25):</b> Talkie's own server (radio.talkiefiber.com) with backup relays; mesh (no internet);</li>
 </ul>
