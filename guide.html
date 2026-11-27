@@ -14,7 +14,7 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 </style></head><body><main>
 <p class="top"><a href="index.html">Privacy policy</a> · <a href="https://play.google.com/store/apps/details?id=com.talkie.radio">Get it on Google Play</a></p>
 <h1 id="talkie-radio-user-guide-and-faq">Talkie Radio – User Guide and FAQ</h1>
-<p><i>Talkie Communications · push-to-talk radio for teams</i> <i>Covers version <b>4.2</b> (on Google Play now) and <b>4.3</b> (coming next — marked <span class="new">4.3</span>).</i> <i>Last updated: 2026-11-25. This guide is kept up to date with every release — see "Change log" at the end.</i></p>
+<p><i>Talkie Communications · push-to-talk radio for teams</i> <i>Covers version <b>4.3</b> (on Google Play now).</i> <i>Last updated: 2026-11-25. This guide is kept up to date with every release — see "Change log" at the end.</i></p>
 <hr>
 <h2 id="contents">Contents</h2>
 <ol>
@@ -90,7 +90,7 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <ul>
 <li><b>Hold</b> the big button (or <b>hold the volume-down key</b>, or a <b>headset button</b>) and talk; release to send. A quick tap</li>
 </ul>
-<p>on volume-down still just turns the volume down; holding it for about half a second starts talking. [4.3]</p>
+<p>on volume-down still just turns the volume down; holding it for about half a second starts talking.</p>
 <ul>
 <li>If someone is already talking when you press, your message is recorded and sent right after them ("QUEUED") —</li>
 </ul>
@@ -101,8 +101,8 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 </ul>
 <p>re-sending to people who were offline for up to 1 hour.</p>
 <ul>
-<li><span class="new">4.3</span> Voice uses a new compressed format (Opus): smaller and clearer. 4.3 phones need Android 10 or newer.</li>
-<li><span class="new">4.3</span> If you send while the phone is offline or switching networks, the message <b>waits and retries by itself</b>. For the</li>
+<li>Voice uses a new compressed format (Opus): smaller and clearer. 4.3 phones need Android 10 or newer.</li>
+<li>If you send while the phone is offline or switching networks, the message <b>waits and retries by itself</b>. For the</li>
 </ul>
 <p>first 10 seconds you see nothing at all; then "Sending…"; only after 60 seconds "Not sent – tap to try again" (kept in History until you retry or delete it).</p>
 <h2 id="5-emergency">5. Emergency</h2>
@@ -117,11 +117,11 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <p>30 minutes.</p>
 <ul>
 <li>Emergencies play over everything, wake the screen and show on the lock screen.</li>
-<li><span class="new">4.3</span> Fixed: if someone talked during your emergency, your voice could stop reaching them (your music came back on).</li>
+<li>Fixed: if someone talked during your emergency, your voice could stop reaching them (your music came back on).</li>
 </ul>
 <p>Your audio now stays held for the whole emergency, and the red controls stay up while you hear others.</p>
 <ul>
-<li><span class="new">4.3</span> On push-to-talk radios with an SOS button, the SOS button can trigger Emergency (per model).</li>
+<li>On push-to-talk radios with an SOS button, the SOS button can trigger Emergency (per model).</li>
 </ul>
 <h2 id="6-texts-photos-alerts-and-private-messages">6. Texts, photos, alerts and private messages</h2>
 <ul>
@@ -138,7 +138,7 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <ul>
 <li><b>Several groups at once:</b> talk on one, hear the others (Groups tab, "Hear on").</li>
 </ul>
-<p>The radio card then says "Hearing N groups"; turning a group on shows "Now hearing &lt;group&gt;". [4.3]</p>
+<p>The radio card then says "Hearing N groups"; turning a group on shows "Now hearing &lt;group&gt;".</p>
 <ul>
 <li><b>Invite a member:</b> Groups → invite → QR code or link. Invites work for 24 hours. Anyone with the invite knows the group</li>
 </ul>
@@ -146,7 +146,7 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <ul>
 <li><b>Access log:</b> each group keeps a log of who invited whom and who joined.</li>
 <li><b>Supervisor lock:</b> "Lock this phone to its group" (PIN) stops a guard's phone from changing groups.</li>
-<li><b>[4.3] Send group / Receive group (over the air, no typing):</b></li>
+<li><b>Send group / Receive group (over the air, no typing):</b></li>
 </ul>
 <ol>
 <li class="sub">On the new radios: Groups → <b>Receive group</b> (that's the only tap).</li>
@@ -155,7 +155,22 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 </ol>
 <ul>
 <li class="sub">Nothing is sent until you confirm. Works without internet. Locked radios refuse.</li>
+<li class="sub">A radio can only be ticked once its 4-digit code is showing next to its name (the same code is big on that radio's</li>
 </ul>
+<p>screen). A radio still showing "····" is greyed out and "Select all" skips it. If a radio's code changed or it disconnected before you tapped Send, the app says "Not sent to 1 radio" - check the codes and send again.</p>
+<ul>
+<li class="sub">The access log lists every radio that was really sent the group, one line per radio (two radios with the same name</li>
+</ul>
+<p>are two lines).</p>
+<ul>
+<li class="sub">A brand-new radio that joins this way also gets "Joined … - Undo": one tap leaves the group again.</li>
+<li class="sub">A phone keeps up to 12 groups. A 13th is refused ("Too many groups"): remove one first (Groups). Nothing is ever</li>
+</ul>
+<p>removed for you.</p>
+<ul>
+<li class="sub">If you cancelled an emergency while the phone had no connection, that group can't be removed (or an over-the-air join</li>
+</ul>
+<p>undone) until its members were told: the app says "Group not removed yet". The notice goes out by itself when a connection is back - also after you exit and reopen the app - or the emergency ends by itself after 30 minutes.</p>
 <h2 id="8-contacts-team-map-history">8. Contacts, team map, history</h2>
 <ul>
 <li><b>Contacts</b> — everyone you've heard from, with online status.</li>
@@ -175,11 +190,11 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <li>Range phone-to-phone: roughly 50–100 m indoors, 150–200 m+ outdoors; every phone in between extends it.</li>
 <li><b>Settings → Mesh</b> turns it on/off. <b>Test without internet</b> tries it for 5 minutes.</li>
 <li>The mesh needs <b>Google Play services</b> on the phone (all normal Android phones have it).</li>
-<li><b>[4.3] Smart mesh:</b> while your internet is good, the phone searches for nearby phones only now and then (saves battery);</li>
+<li><b>Smart mesh:</b> while your internet is good, the phone searches for nearby phones only now and then (saves battery);</li>
 </ul>
 <p>the moment the connection weakens it goes to full speed.</p>
 <ul>
-<li><b>[4.3] "No internet" banner:</b> tells you when there's no internet and whether nearby phones are linked, with buttons to</li>
+<li><b>"No internet" banner:</b> tells you when there's no internet and whether nearby phones are linked, with buttons to</li>
 </ul>
 <p>turn on Wi-Fi, Bluetooth or the mesh.</p>
 <ul>
@@ -189,50 +204,62 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <ul>
 <li>The radio keeps receiving in the background like a radio on your belt. A quiet notification shows this: one line,</li>
 </ul>
-<p>"Talkie Radio active" (or "Talkie Radio active · sharing your location"). Open it to see "On duty · receiving your groups". It makes no sound, doesn't pop up, sits with the silent notifications and shows no details on the lock screen. Its small icon stays in the status bar, unless your phone hides silent notifications there. [4.3]</p>
+<p>"Talkie Radio active" (or "Talkie Radio active · sharing your location"). Open it to see "On duty · receiving your groups". It makes no sound, doesn't pop up, sits with the silent notifications and shows no details on the lock screen. Its small icon stays in the status bar, unless your phone hides silent notifications there.</p>
 <ul>
 <li>You can swipe that notification away; the radio keeps running. While you share your location it can't be swiped away,</li>
 </ul>
-<p>and its "Stop sharing location" button stays on it. Some Android 13 phones don't let you swipe it away at all. [4.3]</p>
+<p>and its "Stop sharing location" button stays on it. Some Android 13 phones don't let you swipe it away at all.</p>
 <ul>
 <li>If the phone's microphone stops working in the middle of a talk, that message shows as "Not sent - tap to try again";</li>
 </ul>
-<p>a tap sends what was recorded. [4.3]</p>
+<p>a tap sends what was recorded.</p>
 <ul>
 <li>A headset talk with the screen off that fails the same way shows a notification "Voice message not sent - Open Talkie</li>
 </ul>
-<p>Radio to retry". Tap it: the app opens at that message in History; tap the message to send it. [4.3]</p>
+<p>Radio to retry". Tap it: the app opens at that message in History; tap the message to send it.</p>
 <ul>
 <li>If the microphone didn't record anything at all (it failed to start), there is nothing to send: the app says "Not sent -</li>
 </ul>
-<p>talk again". Hold the button and talk again. [4.3]</p>
+<p>talk again". Hold the button and talk again.</p>
 <ul>
 <li>That also happens if you let go of the button before the headset microphone opened (about a second): nothing was</li>
 </ul>
-<p>sent, so there is nothing to retry. [4.3]</p>
+<p>sent, so there is nothing to retry.</p>
 <ul>
 <li>While you have chosen <b>Offline</b> (Offline ▾ → Go offline), the talk button does not record: it says "You're offline.</li>
 </ul>
-<p>Tap Offline ▾ → Go online to talk." Go online first. [4.3]</p>
+<p>Tap Offline ▾ → Go online to talk." Go online first.</p>
 <ul>
 <li>Tapping a "Not sent" message pop-up retries only that one message; other failed messages stay in History until you</li>
 </ul>
-<p>tap them. [4.3]</p>
+<p>tap them.</p>
 <ul>
 <li>If you go <b>Offline</b> while talking, that message is not sent (also not later): it shows "Not sent - You went offline</li>
 </ul>
-<p>while talking"; go online and tap it to send it. While Offline, <b>Emergency</b> does nothing except say "Emergency not sent - You're offline": go online first. [4.3]</p>
+<p>while talking"; go online and tap it to send it. While Offline, <b>Emergency</b> does nothing except say "Emergency not sent - You're offline": go online first.</p>
 <ul>
-<li>If the connection changes while you talk (for example the internet drops and only nearby phones are left), that message</li>
+<li>If the connection changes while you talk (for example Wi-Fi hands over to mobile data, or the internet drops and only</li>
 </ul>
-<p>shows "Not sent - The connection changed while you were talking". Tap it: the whole message is sent again. [4.3]</p>
+<p>nearby phones are left), the app says "Connection changed - This message is sent again when you finish". Keep talking: when you let go, the <b>whole message is sent again by itself</b> on the new connection - also an emergency message. People who already heard the start hear only the rest. Only if that second try fails too does it show "Not sent - The connection changed while you were talking"; tap it to send it again.</p>
+<ul>
+<li>Right after you let go of the button the status line says "Sending…"; it changes to "Message sent" once the message</li>
+</ul>
+<p>really went out.</p>
 <ul>
 <li>If the microphone doesn't finish a recording properly, it shows "Not sent - The recording didn't finish properly"; tap it</li>
 </ul>
-<p>to send what was recorded. [4.3]</p>
+<p>to send what was recorded. If Android itself cut the microphone (another app or a phone call took it), it says "Android interrupted the microphone while you were talking" - tap it to send what was recorded.</p>
 <ul>
-<li>A photo now keeps its place: a text you send after it arrives after the photo. Big photos get a little more time. [4.3]</li>
-<li><b>[4.3] Wi-Fi with no internet → mobile data:</b> e.g. you walk out to the driveway and the phone is still on weak Wi-Fi with no</li>
+<li>If you remove a group, anything still waiting to be sent to it is dropped with it, and a private contact you had picked</li>
+</ul>
+<p>in that group is un-picked: your button talks to your talk group again.</p>
+<ul>
+<li>A message you sent to a group you are not hearing right now (Hear is off for it) still goes out, but History shows "sent ·</li>
+</ul>
+<p>no receipts while not hearing this group": the phone can't see who received it until you hear that group again.</p>
+<ul>
+<li>A photo now keeps its place: a text you send after it arrives after the photo. Big photos get a little more time.</li>
+<li><b>Wi-Fi with no internet → mobile data:</b> e.g. you walk out to the driveway and the phone is still on weak Wi-Fi with no</li>
 </ul>
 <p>internet. The radio notices within ~5 s and moves its own traffic to mobile data; it moves back once Wi-Fi works again. Setting: "Use mobile data when Wi-Fi has no internet" (on by default). Other apps aren't affected.</p>
 <ul>
@@ -252,13 +279,13 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <tr><td>Share my location with my group</td><td>On/off. While on, the notification says "Talkie Radio active · sharing your location" with a Stop button.</td></tr>
 <tr><td>Mesh: nearby phones help each other</td><td>On/off (see §9). Allow nearby devices / Bluetooth and Wi-Fi rows help fix permissions.</td></tr>
 <tr><td>Test without internet</td><td>Uses only nearby phones for 5 minutes.</td></tr>
-<tr><td><span class="new">4.3</span> Use mobile data when Wi-Fi has no internet</td><td>See §10.</td></tr>
+<tr><td>Use mobile data when Wi-Fi has no internet</td><td>See §10.</td></tr>
 <tr><td>Keep radio on when the phone sleeps</td><td>The battery exemption — allow it.</td></tr>
 <tr><td>Radio check</td><td>Tests connection, microphone and speaker.</td></tr>
-<tr><td><span class="new">4.3</span> Device capabilities</td><td>What this phone/radio can do (Android, memory, Google services, Bluetooth Long Range, Wi-Fi, audio, GPS, permissions) + a button tester + Copy. Nothing is sent anywhere.</td></tr>
+<tr><td>Device capabilities</td><td>What this phone/radio can do (Android, memory, Google services, Bluetooth Long Range, Wi-Fi, audio, GPS, permissions) + a button tester + Copy. Nothing is sent anywhere.</td></tr>
 <tr><td>Relay server (advanced)</td><td>Built-in relays (Talkie's server first, public backups).</td></tr>
 <tr><td>Phone registration</td><td>Whether your name and phone model are shared with Talkie's server (your choice).</td></tr>
-<tr><td>Remove this device from Talkie's server</td><td>Deletes this phone's registration at once. If the server doesn't answer, the app says "Removal not confirmed" and the phone stays unregistered - tap Remove again.</td></tr>
+<tr><td>Remove this device from Talkie's server</td><td>Deletes this phone's registration at once. If the server doesn't answer, or its answer is cut off or unclear, the app says "Removal not confirmed" and the phone stays unregistered - tap Remove again. Only if the server clearly refuses ("Couldn't remove it") does your earlier registration choice come back.</td></tr>
 <tr><td>Show calls and emergencies full screen</td><td>Over the lock screen.</td></tr>
 <tr><td>About / Exit radio</td><td>Version info / turn the radio off.</td></tr>
 </table></div>
@@ -282,7 +309,7 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <ol>
 <li>Charge the radios, install Talkie Radio, type each radio's name (e.g. "Unit 7").</li>
 <li>Allow all permissions, including the battery exemption.</li>
-<li><span class="new">4.3</span> Put them all on <b>Receive group</b>, then <b>Send group → Send to all</b> from your phone. (Before 4.3: show the QR</li>
+<li>Put them all on <b>Receive group</b>, then <b>Send group → Send to all</b> from your phone. (Before 4.3: show the QR</li>
 </ol>
 <p>invite.)</p>
 <ol>
@@ -310,8 +337,9 @@ th,td{border:1px solid #2a2f34;padding:6px 8px;text-align:left;vertical-align:to
 <p><b>Does it work if the other person's screen is off?</b> Yes for voice, emergencies, alerts and texts. Photos and late voice messages wait until they open the app (§13).</p>
 <p><b>Someone shows Online but didn't get my photo — why?</b> Online means their radio runs in the background; photos are only taken in when their app is open (§6). A clearer label and instant delivery on open are planned for 4.4.</p>
 <p><b>Why did someone go Offline?</b> Usually Android stopped the app to save battery — allow the battery exemption (§15).</p>
-<p><b>How much data does it use?</b> Very little. Voice ~128 kbit/s while talking in 4.2; <span class="new">4.3</span> about 22 kbit/s (5–8× less).</p>
-<p><b>What happens if I talk during a weak connection?</b> <span class="new">4.3</span> It waits and retries up to 60 s silently before telling you.</p>
+<p><b>How much data does it use?</b> Very little: about 22 kbit/s while someone is talking (older 4.2 used ~128 kbit/s).</p>
+<p><b>What happens if I talk during a weak connection?</b> It waits and retries up to 60 s silently before telling you.</p>
+<p><b>What if the connection changes while I'm talking (Wi-Fi to mobile data)?</b> Keep talking. The app says "Connection changed" and sends the whole message again by itself when you let go. You only need to tap if it then says "Not sent".</p>
 <p><b>Can I use a walkie-talkie style radio instead of a phone?</b> Yes — Android push-to-talk radios with Android 10+, Google Play services and US LTE bands. The talk / SOS buttons can be mapped (Settings → Device capabilities → button tester).</p>
 <p><b>Is my location always shared?</b> Only if you turn on "Share my location with my group"; you can stop it from the notification.</p>
 <p><b>How do I delete my data?</b> Settings → Remove this device from Talkie's server; uninstall the app to delete everything on the phone. Or email sales@talkiefiber.com.</p>
